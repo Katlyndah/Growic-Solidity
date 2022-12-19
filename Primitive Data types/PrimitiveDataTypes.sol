@@ -30,9 +30,9 @@ contract GrowicDataTypes {
 
     //Here are examples of signed integers in Solidity:
 
-    int256 a = -140; //this can also be represented as int256 a = -140;
+    int a = -140; //this can also be represented as int256 a = -140;
     int256 b = 20;
-    int256 public oranges; //I could also declare an int like this in Solidity.
+    int public oranges; //I could also declare an int like this in Solidity.
 
     //3. Unsigned integers
     /*
@@ -46,8 +46,8 @@ contract GrowicDataTypes {
 
     //Here are examples of unsigned integers in Solidity:
 
-    uint256 percentage; //also represents uint256 percentage;
-    uint256 public growic; //visibility modifier added.
+    uint percentage; //also represents uint256 percentage;
+    uint public growic; //visibility modifier added.
     uint256 datatype;
 
     //4. Boolean
