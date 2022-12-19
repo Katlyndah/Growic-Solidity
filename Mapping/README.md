@@ -2,12 +2,7 @@ QUIZ Completed Grade 100%
 
 Task Instructions
 
-Familiarize yourself with solidity data types, and provide example for each of the solidity value types below, make sure you give at least 1 use case you believe they can be used for:
+Create a smart contract that saves user balance. The contract should have the functions:
 
-1. Solidity value types
-2. Signed integers
-3. Unsigned integers
-4. Boolean
-5. Addresses
-6. Enums
-7. Bytes
+deposit (uint256 amount) this function accepts one argument and it saves the amount a user is depositing into a mapping,
+checkBalance() this function searches for the user balance inside the balance mapping and returns the balance of whoever is calling the contract.
