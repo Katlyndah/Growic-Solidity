@@ -10,7 +10,7 @@ contract KYC {
     This task extends the functionality of the previous contract by allowing users to save 
     their additional info into the smart contract as a KYC measure.The contract should now 
     contain the following:
-    setUserDetails(string calldata name, uint256 age) this function accepts 2 arguments 
+    setUserDetails(string memory name, uint256 age) this function accepts 2 arguments 
     that represent the details of the user calling the smart contract and it saves them into a defined struct,
     getUserDetail() this function retrieves and returns the details saved for the user calling the contract.
     */
@@ -35,14 +35,14 @@ contract KYC {
 
     userDetails[] public Details;
 
-    function setUserDetails(string calldata _name, uint256 _age) public payable {
+    function setUserDetails(string memory _name, uint256 _age) public payable {
         Details.push(userDetails({name: _name, age: _age}));
     }
 
     function getUserDetails(uint256 _index)
         public
         view
-        returns (string calldata name, uint256 age)
+        returns (string memory name, uint256 age)
     {
         userDetails storage user = Details[_index];
         return (user.name, user.age);
