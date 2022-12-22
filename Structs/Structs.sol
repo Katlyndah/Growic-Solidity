@@ -35,14 +35,14 @@ contract KYC {
 
     userDetails[] public Details;
 
-    function setUserDetails(string memory _name, uint256 _age) public payable {
+    function setUserDetails(string calldata _name, uint256 _age) public payable {
         Details.push(userDetails({name: _name, age: _age}));
     }
 
     function getUserDetails(uint256 _index)
         public
         view
-        returns (string memory name, uint256 age)
+        returns (string calldata name, uint256 age)
     {
         userDetails storage user = Details[_index];
         return (user.name, user.age);
