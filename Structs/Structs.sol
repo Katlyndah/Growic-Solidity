@@ -43,13 +43,12 @@ contract KYC {
     }
 
     //Function to retrieve and return details saved for user calling the contract
-    function getUserDetails(uint256 _index)
+    function getUserDetails()
         public
         view
         returns (string memory name, uint256 age)
     {
-        userDetails storage user = Details[_index];
+        userDetails storage user = Details[balances[msg.sender]];
         return (user.name, user.age);
     }
-    
 }
