@@ -1,10 +1,7 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0 .0;
-
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeMath.sol";
+pragma solidity ^0.8.8 .0;
 
 contract KYC {
-    using SafeMath for uint256;
 
     /*
     This task extends the functionality of the previous contract by allowing users to save 
