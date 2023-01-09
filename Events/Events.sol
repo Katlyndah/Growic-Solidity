@@ -11,6 +11,9 @@ ProfileUpdated(address user)
 
 Answer starts at line 83
  */
+     //Declare events
+    event FundsDeposited(address indexed _user, uint256 _amount);
+    event ProfileUpdated(address indexed _user);
 
     //Custom Errors used
     error onlyOwner(address _user, address _owner);
@@ -82,9 +85,6 @@ Answer starts at line 83
         _;
     }
 
-    //Declare events
-    event FundsDeposited(address indexed _user, uint256 _amount);
-    event ProfileUpdated(address indexed _user);
 
     //Function DepositFunds to allow anybody to send funds
     //Function stores details of users and amount in mapping
