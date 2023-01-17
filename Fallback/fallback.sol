@@ -30,6 +30,7 @@ contract FallBack {
 
     //Fallback function to allow contract to receive Ether
     receive() external payable {}
+    fallback() external payable {}
 
     //modifier to ensure that only the owner of the contract can withdraw funds
     modifier onlyOwner() {
